@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabuada Mágica</title>
+</head>
+<body>
+<script>
+//Tabuada Mágica
+//Apresentação
+    alert(
+      "🎉 Bem-vindo à 'Tabuada Mágica'! 🎉\n" + "Digite dois números \n" + "e veja a mágica acontecer! ✨📚"
+);
+//Entrada de dados
+    let operacao, n1, n2, n3, calculo;
+    do {
+    operacao = prompt("Informe a Operação desejada: \n *,/,+,-");
+    switch (operacao) {
+//Caso da Multiplicação
+      case "*":
+        n1 = Number(prompt("Informe o 1° Número (multiplicador):"));
+        n2 = Number(prompt("Informe o 2° Número (limite):"));
+        n3 = 0;
+// Se o limite for negativo (contagem regressiva)
+   if (n2<0) {
+      while (n3>=n2) {
+      calculo = n1*n2;
+      document.write ("<center>"+n1+"X("+n2+")="+calculo);
+         n2++
+      }
+   } else {
+//Contagem progressiva normal
+      while (n3<=n2) {
+      calculo = n1*n3;
+      document.write ("<center>"+n1+"X"+n3+"="+calculo);
+      n3++
+    }
+   }
+      break;
+//Caso da Divisão
+      case "/":
+        n1 = Number(prompt("Informe o 1° Número (Numerador):"));
+        n2 = Number(prompt("Informe o 2° Número (Divisor):"));
+        n3 = 0;
+// Se o limite for negativo (contagem regressiva)
+   if (n2<0) {
+      while (n3>=n2) {
+      calculo = n1/n2;
+      calculo = calculo.toFixed(2);
+      document.write ("<center>"+n1+"/("+n2+")="+calculo);
+         n2++
+      }
+   } else {
+//Contagem progressiva normal
+      while (n3<=n2) {
+      calculo = n1/n3;
+      calculo = calculo.toFixed(2);
+      document.write ("<center>"+n1+"/"+n3+"="+calculo);
+      n3++
+    }
+   }
+      break;
+//Caso da soma
+      case "+":
+        n1 = Number(prompt("Informe o 1° Número :"));
+        n2 = Number(prompt("Informe o 2° Número :"));
+        n3 = 0;
+// Se o limite for negativo (contagem regressiva)
+   if (n2<0) {
+      while (n3>=n2) {
+      calculo = n1+n2;
+      document.write ("<center>"+n1+"+("+n2+")="+calculo);
+         n2++
+      }
+   } else {
+//Contagem progressiva normal
+      while (n3<=n2) {
+      calculo = n1+n3;
+      document.write ("<center>"+n1+"+"+n3+"="+calculo);
+      n3++
+    }
+   }
+      break;
+//Caso da subtração
+      case "-":
+      n1 = Number(prompt("Informe o 1° Número :"));
+        n2 = Number(prompt("Informe o 2° Número :"));
+        n3 = 0;
+// Se o limite for negativo (contagem regressiva)
+   if (n2<0) {
+      while (n3>=n2) {
+      calculo = n1-n2;
+      document.write ("<center>"+n1+"-("+n2+")="+calculo);
+         n2++
+      }
+   } else {
+//Contagem progressiva normal
+      while (n3<=n2) {
+      calculo = n1-n3;
+      document.write ("<center>"+n1+"-"+n3+"="+calculo);
+      n3++
+    }
+   }
+// Se não for nenhuma das operações
+      break;
+      default:
+        calculo = "Operação Inválida, Tente Novamente!";
+        alert ("Operação Inválida, Tente Novamente!");
+    }
+    }while (calculo == "Operação Inválida, Tente Novamente!" )
+</script>
+</body>
+</html>
