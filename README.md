@@ -1,4 +1,4 @@
-![Banner Tabuada Mágica]([https://via.placeholder.com/1000x200.png?text=Tabuada+M%C3%A1gica](https://chatgpt.com/s/m_6802ef3130688191ac7264d4c0e278bd)) 
+![Banner Tabuada Mágica](https://github.com/carlosllevi/tabuadaMagica/blob/cc71ea1c3f3f459b327ca83de47f6aff324e1e87/Tabuada%20M%C3%A1gica%20em%20C%C3%B3digo.png)
 #  Tabuada Mágica
 
 A **Tabuada Mágica** é uma aplicação interativa desenvolvida com HTML e JavaScript que permite ao usuário praticar as quatro operações matemáticas de forma dinâmica.  
